@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
     <h1>Esta es la página "blog"</h1>
+
+    <button onclick="playPause()">Reproducir/Pausar</button>
+    <button onclick="reload()">Recargar</button>
+    <button onclick="makeLarge()">Maximizar</button>
+    <button onclick="makeSmall()">Minimizar</button>
+    <button onclick="makeNormal()">Normal</button>
+
+    <br><br>
+
+    <video id="videoPlayer" width="500">
+        <source src="Vídeos/video1.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <iframe src="https://www.youtube.com/watch?v=vpbXcSlPeR8&ab_channel=PlanetaTierra" title="Video paisaje">
+    </iframe>
+
 </body>
 </html>
