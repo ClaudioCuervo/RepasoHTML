@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+</head>
+<body>
+    <form>
+        <p>
+            <label for="user">Nombre de usuario: </label>
+            <input type="text" required id="id_user" name="user" placeholder="Escriba aquí" autofocus="autofocus" autocomplete="on">
+        </p>
+
+        <p>
+            <label for="contraseña">Introduzca una contraseña: </label>
+            <input type="password" required id="id_contraseña" name="contraseña" placeholder="Escriba aquí" minlength="8" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*">
+        </p>
+
+        <p>
+            <label for="número">Seleccione un número del 0 al 10: </label>
+            <input type="number" required id="id_número" name="número" min="0" max="10">
+        </p>
+
+        <p>
+            <label for="archivo">Seleccione un archivo: </label>
+            <input type="file" required id="id_archivo" name="archivo">
+        </p>
+
+       <p>
+        <label for="fruta">¿Cuál es tu provincia favoria entre estas cuatro?</label>
+        <input type="text" id="id_fruta" name="fruta" list="lista1" placeholder="Escriba aquí" required pattern="[Mm]adrid | [Bb]arcelona | [Ss]evilla | [Pp]ontevedra">
+        <datalist id="lista1">
+            <option>Madrid</option>
+            <option>Barcelona</option>
+            <option>Sevilla</option>
+            <option>Pontevedra</option>
+        </datalist>
+       </p>
+
+        <p>
+            <label for="color">¿Cuál es tu color favorito?</label>
+            <input type="color" required id="id_color" name="color">
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>¿Tienes mascota?<abbr title="Este campo es obligatorio" aria-label="required">*</abbr></legend>
+            <input type="radio" required id="id_radio1" name="radio1" value="si"><label for="radio1">Si</label>
+            <input type="radio" required id="id_radio2" name="radio1" value="no"><label for="radio2">No</label>
+            </fieldset>
+        </p>
+
+        <p>
+            Progreso:
+            <progress value="75" max="100"></progress>
+        </p>
+
+        <p>
+            <button type="submit" onclick="passwordValidation()">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
